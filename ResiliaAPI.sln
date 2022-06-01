@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResiliaAPI", "ResiliaAPI\ResiliaAPI.csproj", "{6C1756B9-7780-4503-810F-2F70DEEB5D43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C1756B9-7780-4503-810F-2F70DEEB5D43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C1756B9-7780-4503-810F-2F70DEEB5D43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C1756B9-7780-4503-810F-2F70DEEB5D43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C1756B9-7780-4503-810F-2F70DEEB5D43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B477F6B-5A2E-4595-B798-D5F7254107F8}
+	EndGlobalSection
+EndGlobal
