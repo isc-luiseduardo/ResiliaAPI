@@ -16,6 +16,7 @@ namespace ResiliaAPI.Controllers
     {
         private IConfiguration _configuration;
         private User currentUser;
+        private string CloudMessagingToken = "";
 
         public NotificationsController(IConfiguration configuration)
         {
@@ -24,13 +25,14 @@ namespace ResiliaAPI.Controllers
 
         [EnableCors("AllowAll")]
         [HttpPost(Name = "Initialize")]
-        public async Task<ActionResult> Post()
+        public ActionResult Post([FromBody]string firebaseToken)
         {
             //Setup the name on the Service and start sending 
             try
             {
                 currentUser = DataMockerHelper.GenerateFakeUser();
-                await StartPushNotifications();
+                CloudMessagingToken = firebaseToken;
+                StartPushNotifications();
             }
             catch (Exception ex)
             {
@@ -81,8 +83,8 @@ namespace ResiliaAPI.Controllers
                                                         { "RecipentEmail", currentUser.Email },
                                                         { "Type", notificationTitles.Item1 }
                                                    },
-                                                   "",
-                                                   "Resilia");
+                                                   CloudMessagingToken,
+                                                   "");
             }
         }
     }

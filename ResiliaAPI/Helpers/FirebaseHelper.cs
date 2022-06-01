@@ -41,9 +41,8 @@ namespace ResiliaAPI.Helpers
                         Body = messageBody,
                         ImageUrl = messageImageUrl
                     },
-                    //Token = messageToken,
-                    Data = messageData,
-                    Topic = topic
+                    Token = messageToken,
+                    Data = messageData
                 };
 
                 Debug.WriteLine(firebaseMessage);  //Log the built messages
