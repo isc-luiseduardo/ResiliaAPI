@@ -39,7 +39,7 @@ namespace ResiliaAPI.Controllers
                 return BadRequest(ex.Message);
             }
 
-            return Ok();
+            return Ok(currentUser);
         }
 
         private async Task StartPushNotifications()
