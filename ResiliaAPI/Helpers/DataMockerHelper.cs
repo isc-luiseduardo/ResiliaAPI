@@ -134,7 +134,7 @@ namespace ResiliaAPI.Helpers
         /// Creates a simple random Guid.
         /// </summary>
         /// <returns>A new standard GUID</returns>
-        public static string GenerateFakeUserID()
+        public static string GenerateGuid()
         {
             return Guid.NewGuid().ToString();
         }

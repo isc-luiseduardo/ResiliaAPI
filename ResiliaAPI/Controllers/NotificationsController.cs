@@ -75,8 +75,9 @@ namespace ResiliaAPI.Controllers
                                                    DataMockerHelper.GetRandomImageUrl(200),
                                                    new Dictionary<string, string>()
                                                    {
+                                                        { "NotificationID", DataMockerHelper.GenerateGuid() },
                                                         { "FullName", DataMockerHelper.GetRandomFullName() },
-                                                        { "UserID", DataMockerHelper.GenerateFakeUserID() },
+                                                        { "UserID", DataMockerHelper.GenerateGuid() },
                                                         { "CreatedAt", notificationDates.Item1 },
                                                         { "ReceivedAt", notificationDates.Item2 },
                                                         { "RecipentName", currentUser.Name },
